@@ -1,0 +1,115 @@
+{
+  "name": "dc-small-4x4",
+  "hosts": [
+    {
+      "id": 0,
+      "name": "host0",
+      "cpu_capacity": 8,
+      "ram_capacity": 16,
+      "bandwidth_capacity": 10
+    },
+    {
+      "id": 1,
+      "name": "host1",
+      "cpu_capacity": 8,
+      "ram_capacity": 16,
+      "bandwidth_capacity": 10
+    },
+    {
+      "id": 2,
+      "name": "host2",
+      "cpu_capacity": 8,
+      "ram_capacity": 16,
+      "bandwidth_capacity": 10
+    },
+    {
+      "id": 3,
+      "name": "host3",
+      "cpu_capacity": 8,
+      "ram_capacity": 16,
+      "bandwidth_capacity": 10
+    }
+  ],
+  "virtual_machines": [
+    {
+      "id": 0,
+      "name": "",
+      "cpu_requirement": 2,
+      "ram_requirement": 4,
+      "bandwidth_requirement": 2
+    },
+    {
+      "id": 1,
+      "name": "",
+      "cpu_requirement": 3,
+      "ram_requirement": 4,
+      "bandwidth_requirement": 1
+    },
+    {
+      "id": 2,
+      "name": "",
+      "cpu_requirement": 1,
+      "ram_requirement": 2,
+      "bandwidth_requirement": 2
+    },
+    {
+      "id": 3,
+      "name": "",
+      "cpu_requirement": 2,
+      "ram_requirement": 3,
+      "bandwidth_requirement": 1
+    }
+  ],
+  "latency_matrix": [
+    [
+      2.0,
+      2.0,
+      4.0,
+      5.0
+    ],
+    [
+      2.0,
+      3.0,
+      3.0,
+      4.0
+    ],
+    [
+      4.0,
+      3.0,
+      1.0,
+      2.0
+    ],
+    [
+      5.0,
+      4.0,
+      2.0,
+      2.0
+    ]
+  ],
+  "traffic_matrix": [
+    [
+      0.0,
+      8.0,
+      2.0,
+      1.0
+    ],
+    [
+      8.0,
+      0.0,
+      4.0,
+      3.0
+    ],
+    [
+      2.0,
+      4.0,
+      0.0,
+      5.0
+    ],
+    [
+      1.0,
+      3.0,
+      5.0,
+      0.0
+    ]
+  ]
+}

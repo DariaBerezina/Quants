@@ -1,0 +1,207 @@
+{
+  "name": "dc-medium-6x6",
+  "hosts": [
+    {
+      "id": 0,
+      "name": "host0",
+      "cpu_capacity": 12,
+      "ram_capacity": 24,
+      "bandwidth_capacity": 16
+    },
+    {
+      "id": 1,
+      "name": "host1",
+      "cpu_capacity": 12,
+      "ram_capacity": 24,
+      "bandwidth_capacity": 16
+    },
+    {
+      "id": 2,
+      "name": "host2",
+      "cpu_capacity": 12,
+      "ram_capacity": 24,
+      "bandwidth_capacity": 16
+    },
+    {
+      "id": 3,
+      "name": "host3",
+      "cpu_capacity": 12,
+      "ram_capacity": 24,
+      "bandwidth_capacity": 16
+    },
+    {
+      "id": 4,
+      "name": "host4",
+      "cpu_capacity": 12,
+      "ram_capacity": 24,
+      "bandwidth_capacity": 16
+    },
+    {
+      "id": 5,
+      "name": "host5",
+      "cpu_capacity": 12,
+      "ram_capacity": 24,
+      "bandwidth_capacity": 16
+    }
+  ],
+  "virtual_machines": [
+    {
+      "id": 0,
+      "name": "",
+      "cpu_requirement": 2,
+      "ram_requirement": 7,
+      "bandwidth_requirement": 4.0
+    },
+    {
+      "id": 1,
+      "name": "",
+      "cpu_requirement": 3,
+      "ram_requirement": 5,
+      "bandwidth_requirement": 5.0,
+      "allowed_hosts": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "name": "",
+      "cpu_requirement": 2,
+      "ram_requirement": 7,
+      "bandwidth_requirement": 2.0
+    },
+    {
+      "id": 3,
+      "name": "",
+      "cpu_requirement": 2,
+      "ram_requirement": 6,
+      "bandwidth_requirement": 5.0,
+      "allowed_hosts": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": 4,
+      "name": "",
+      "cpu_requirement": 4,
+      "ram_requirement": 7,
+      "bandwidth_requirement": 4.0,
+      "allowed_hosts": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 5,
+      "name": "",
+      "cpu_requirement": 5,
+      "ram_requirement": 6,
+      "bandwidth_requirement": 2.0
+    }
+  ],
+  "latency_matrix": [
+    [
+      1.0,
+      3.5,
+      3.0,
+      3.5,
+      2.5,
+      4.5
+    ],
+    [
+      3.5,
+      1.0,
+      2.5,
+      5.0,
+      2.5,
+      3.5
+    ],
+    [
+      3.0,
+      2.5,
+      1.0,
+      2.5,
+      3.0,
+      2.5
+    ],
+    [
+      3.5,
+      5.0,
+      2.5,
+      1.0,
+      3.0,
+      2.5
+    ],
+    [
+      2.5,
+      2.5,
+      3.0,
+      3.0,
+      1.0,
+      3.5
+    ],
+    [
+      4.5,
+      3.5,
+      2.5,
+      2.5,
+      3.5,
+      1.0
+    ]
+  ],
+  "traffic_matrix": [
+    [
+      0.0,
+      4.0,
+      6.0,
+      2.5,
+      5.5,
+      5.5
+    ],
+    [
+      4.0,
+      0.0,
+      3.0,
+      4.5,
+      4.5,
+      4.0
+    ],
+    [
+      6.0,
+      3.0,
+      0.0,
+      5.0,
+      7.5,
+      0.5
+    ],
+    [
+      2.5,
+      4.5,
+      5.0,
+      0.0,
+      2.5,
+      2.0
+    ],
+    [
+      5.5,
+      4.5,
+      7.5,
+      2.5,
+      0.0,
+      6.5
+    ],
+    [
+      5.5,
+      4.0,
+      0.5,
+      2.0,
+      6.5,
+      0.0
+    ]
+  ]
+}

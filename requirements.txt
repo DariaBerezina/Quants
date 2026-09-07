@@ -1,0 +1,11 @@
+# Обязательная зависимость ядра модуля.
+numpy>=1.24
+
+# Опционально: классический оптимизатор COBYLA.
+# Без scipy используется встроенный метод Нелдера — Мида.
+scipy>=1.10
+
+# Опционально: backend "qiskit" (сервис Qiskit Aer Simulator IBM).
+# Для режимов export/decode и backend "local" не требуется.
+qiskit>=1.0
+qiskit-aer>=0.14
